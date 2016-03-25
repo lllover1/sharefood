@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="@drawable/load_image">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="皇家御厨"
+        android:textColor="#D2691E"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+      
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="?android:attr/textColorSecondaryInverse" />
+
+           
+        </LinearLayout>
+        
+  <!-- 用户名-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:text="用户名"
+                android:textColor="#5F9EA0" />
+
+            <EditText
+                android:id="@+id/load_username"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dip"
+                android:layout_weight="1"
+                android:hint="请输入用户名"
+                android:singleLine="true"
+                 />
+        </LinearLayout>
+       
+        <!-- 密码 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:text="密码"
+                android:textColor="#5F9EA0" />
+
+            <EditText
+                android:id="@+id/load_password"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="6dip"
+                android:layout_weight="1"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/load_login"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:background="@drawable/background_button_div"
+                android:text="登陆" />
+
+            <Button
+                android:id="@+id/load_register"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:background="@drawable/background_button_div"
+                android:layout_marginLeft="30dip"
+                android:text="注册"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

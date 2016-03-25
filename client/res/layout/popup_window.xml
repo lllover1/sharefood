@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#00000000" >
+    
+ 	<RelativeLayout
+ 	    android:layout_width="141dp"
+ 	    android:layout_height="wrap_content"  >
+
+	 	 <ImageView android:id="@+id/popwindow_up_img"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/popwindow_up"
+	        android:layout_alignParentRight="true"
+	        />
+     	 <LinearLayout
+	 	     android:id="@+id/popwindow_content"
+	 	     android:layout_height="150dp"
+	 	     android:layout_width="150dp"
+	 	     android:layout_below="@id/popwindow_up_img"
+	 	     android:background="@drawable/pop_border"
+	 	     android:orientation="vertical"
+	 	     android:layout_marginTop="0dp"
+	 	     android:layout_alignParentRight="true">
+	 	     
+	 	     <LinearLayout
+	 	         android:id="@+id/popwindow_item1"
+	 	         android:layout_height="wrap_content"
+	 	         android:layout_width="wrap_content"
+	 	         android:orientation="horizontal"
+	 	         android:layout_gravity="center"
+	 	         android:gravity="center">
+	 	         <ImageView 
+	 	             android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:background="@drawable/search"/>
+	 	         <TextView  android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:text="搜索"
+	 	             android:textColor="#000000"
+	 	             android:textSize="20sp"
+	 	             android:gravity="center"/>
+	 	     </LinearLayout>
+	 	     <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="2dp"
+			        android:layout_below="@id/lv_item_conent_img"
+			        android:background="@drawable/dotted_line"
+			        android:orientation="horizontal" />
+	 	     
+	 	      <LinearLayout
+	 	         android:layout_height="wrap_content"
+	 	         android:layout_width="wrap_content"
+	 	         android:orientation="horizontal"
+	 	         android:layout_gravity="center"
+	 	         android:gravity="center">
+	 	         <ImageView 
+	 	             android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:background="@drawable/message"/>
+	 	         <TextView  android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:text="消息"
+	 	             android:textSize="20sp"
+	 	             android:textColor="#000000"
+	 	             android:gravity="center"/>
+	 	     </LinearLayout>
+	 	     <LinearLayout
+			        android:layout_width="fill_parent"
+			        android:layout_height="2dp"
+			        android:layout_below="@id/lv_item_conent_img"
+			        android:background="@drawable/dotted_line"
+			        android:orientation="horizontal" />
+	 	     
+	 	     <LinearLayout
+	 	         android:layout_height="wrap_content"
+	 	         android:layout_width="wrap_content"
+	 	         android:orientation="horizontal"
+	 	         android:layout_gravity="center"
+	 	         android:gravity="center">
+	 	         <ImageView 
+	 	             android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:background="@drawable/help"/>
+	 	         <TextView  android:layout_width="50dp"
+	 	             android:layout_height="50dp"
+	 	             android:text="帮助"
+	 	             android:textSize="20sp"
+	 	             android:textColor="#000000"
+	 	             android:gravity="center"/>
+	 	     </LinearLayout>
+	 	 </LinearLayout><!-- 内容区域结束标签 -->
+	 	 
+	 	
+	 	 
+	 	 
+ 	</RelativeLayout>
+	
+    
+</LinearLayout>

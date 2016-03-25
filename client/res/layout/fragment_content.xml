@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   <com.example.slidingmenutest.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" /> 
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/base_buttom"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_technology"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_technology_selector"
+            android:text="分享" />
+
+        <RadioButton
+            android:id="@+id/rb_sport"
+            style="@style/BottomTabStyle"
+            android:drawableTop="@drawable/btn_tab_sport_selector"
+            android:text="健康" />
+    </RadioGroup>
+
+</LinearLayout>

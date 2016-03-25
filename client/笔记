@@ -1,0 +1,48 @@
+HttpUtils http = new HttpUtils();    //  下载图片早作准备
+			HttpHandler handler = http.download(path,
+					"/sdcard/haha.exe",
+				    true, // 如果目标文件存在，接着未完成的部分继续下载。服务器不支持RANGE时将从新下载。
+				    true, // 如果从请求返回信息中获取到文件名，下载完成后自动重命名。
+				    new RequestCallBack<File>() {
+
+				        @Override
+				        public void onStart() {
+				        	tv_info.setText("conn...");
+				        }
+				        @Override
+				        public void onLoading(long total, long current, boolean isUploading) {
+				        	tv_info.setText(current + "/" + total);
+				        }
+				        @Override
+				        public void onSuccess(ResponseInfo<File> responseInfo) {
+				        	tv_info.setText("downloaded:" + responseInfo.result.getPath());
+				        }
+				        @Override
+				        public void onFailure(HttpException error, String msg) {
+				        	tv_info.setText(msg);
+				        }
+				});
+				
+				
+				
+				
+//////////////// listview显示最底部  开始////////////////////////////
+方法1：直接在layout里对listView的属性定义
+StackFromBottom: true
+Transcript Mode: alwayScroll
+方法2: 把上面的方法改为java代码的方式声明
+listView.setTranscriptMode(ListView.TRANSCRIPT_MODE_ALWAYS_SCROLL);
+listView.setStackFromBottom(true);
+方法3: 变通的做法 把焦点focus去listView的最后一个item,那自然就是显示最底部
+每次适配器 adapter.notifyDataSetChanged() 之后要记得调用，略麻烦
+注意要用 post的方法确保listview的数据已经加载完毕
+private void scrollMyListViewToBottom() {
+    listView.post(new Runnable() {
+        @Override
+        public void run() {
+            // Select the last row so it will scroll into view...
+            listView.setSelection(listAdapter.getCount() - 1);
+        }
+    });
+}
+//////////////// listview显示最底部 结束 ////////////////////////////

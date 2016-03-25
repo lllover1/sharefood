@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="1dip" >
+
+    <ImageView
+        android:id="@+id/h_iv_head"
+        android:layout_width="48dip"
+        android:layout_height="48dip"
+        android:background="@drawable/ic_launcher" />
+
+    <View
+        android:layout_width="8dip"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="263dp"
+        android:layout_weight="0.99"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蜡笔小新" />
+
+        <TextView
+            android:id="@+id/tv_discrption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            android:text="小新的个性签名" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dip"
+            android:text="发表的内容serhgrawhopjasogaornarhrah" />
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

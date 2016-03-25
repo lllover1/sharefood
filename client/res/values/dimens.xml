@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="shadow_width">100dp</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    
+    <!-- content listview的视图参数 
+        android:padding="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="4dp"
+        android:listSelector="#00000000"
+     -->
+      <dimen name="content_lv_padding">10dp</dimen>
+      <color name="content_lv_divider">#00000000</color>
+      <dimen name="content_lv_dividerHeight">4dp</dimen>
+      <color name="content_lv_listSelector">#00000000</color>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+	"http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+	<constant name="struts.action.extension" value="do,action,," />
+	<package name="struts2" extends="struts-default">
+		
+		
+		<action name="*News" class="com.mobile.service.NewsAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="*Menu" class="com.mobile.service.MenuAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="*Name" class="com.mobile.service.UserAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="*Doing" class="com.mobile.service.DoingAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="*Health" class="com.mobile.service.HealthAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+		<action name="*Share" class="com.mobile.service.ShareAction" method="{1}">
+			<result name="success">index.jsp</result>
+		</action>
+	</package>
+</struts>
+

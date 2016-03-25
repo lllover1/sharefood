@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.slidingmenutest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.example.slidingmenutest.MainActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.example.slidingmenutest.SplashActivity"
+            android:label="@string/title_activity_splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        <activity android:name="com.example.slidingmenutest.GuideActivity"></activity>
+        <activity android:name="com.example.slidingmenutest.LoadActivity"></activity>
+        <activity android:name="com.example.slidingmenutest.DoingAcitity"></activity>
+         <activity android:name="com.example.slidingmenutest.RegisterActivity"></activity>
+         <activity android:name="com.example.slidingmenutest.HealthActivity"></activity>
+         <activity android:name="com.example.slidingmenutest.SettingActivity"></activity>
+        
+    </application>
+
+</manifest>

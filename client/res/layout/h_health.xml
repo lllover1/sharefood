@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/healthbackground" >
+    
+    
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginBottom="30dip"
+        android:numColumns="2" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/h_light"
+        android:layout_width="1000dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="健康小助手"
+        android:textColor="#663300"
+        android:textSize="30sp" 
+        android:layout_centerInParent="true"
+        android:maxLines="1"
+        />
+
+</RelativeLayout>
